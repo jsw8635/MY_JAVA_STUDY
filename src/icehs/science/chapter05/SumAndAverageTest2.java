@@ -9,7 +9,6 @@ public class SumAndAverageTest2 {
 		for(int i = 1; i <= 500 ; i++) {
 			sum += i;
 		}
-		avg = (double)
 		System.out.println("ÇÕ°è :" + sum);
 		System.out.println("Æò±Õ :" + (double)(sum / 500));
 	}
