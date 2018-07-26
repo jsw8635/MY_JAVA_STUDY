@@ -1,11 +1,19 @@
-package icehs.science.chapter07;
+package icehs.science.chapter08;
 
 public class Book {
 	
 	private String title;
-	private String author;
-	int price;
+
+	private int price;
 	
+	
+	
+	public String getTitle() {
+		return title;
+	}
+	public int getPrice() {
+		return price;
+	}
 	Book(){
 		
 		}
@@ -16,18 +24,18 @@ public class Book {
 	
 	Book (String title, String author, int price){
 		this.title = title;
-		this.author = author;
+
 		this.price = price;
 	}
 	
 	Book (String title, String author){
 		this.title = title;
-		this.author = author;
+
 	}
 	void printBookInfo() {
-		System.out.println("å ���� : " + this.title);
-		System.out.println("�۰��� : " + this.author);
-		System.out.println("���� : " + this.price);
+		System.out.println("제목 : " + this.title);
+
+		System.out.println("가격 : " + this.price);
 	}
 	
 

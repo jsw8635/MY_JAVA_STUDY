@@ -2,32 +2,32 @@ package icehs.science.chapter06;
 
 public class Car {
 	
-	String name = "ICEÄ«";
+	public String name = "ICEÄ«";
 	int oilAmount;
 	double distance;
 	
-	//Ãâ¹ßÁö¿Í ¸ñÀûÁö ±×¸®°í °Å¸®¸¦ ¹Þ¾Æ¼­ °è»êÇÏ´Â ¸Þ¼­µå
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¼ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
 	void driveCar(String start, String end, double driveDistance) {
 		distance += driveDistance;
 		oilAmount -= (driveDistance / 20);
-		System.out.println(start + "¿¡¼­ " + end + "±îÁö " + driveDistance + "km ÁÖÇàÇÏ¿´½À´Ï´Ù.");
+		System.out.println(start + "ï¿½ï¿½ï¿½ï¿½ " + end + "ï¿½ï¿½ï¿½ï¿½ " + driveDistance + "km ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	}
 	
-	//±â¸§ ÁÖÀ¯ ¸Þ¼­µå
+	//ï¿½â¸§ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
 	void addOil(int oil) {
 		oilAmount += oil;
-		System.out.println("ÈÖ¹ßÀ¯ " + oil + "L ÁÖÀ¯ÇÕ´Ï´Ù.");
+		System.out.println("ï¿½Ö¹ï¿½ï¿½ï¿½ " + oil + "L ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 	}
 	
-	//³²Àº ±â¸§À¸·Î °¥ ¼ö ÀÖ´Â °Å¸®¸¦ °è»êÇÏ´Â ¸Þ¼­µå
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½â¸§ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
 	void calculateDriveDistance() {
-		System.out.println("ÁÖÇà °¡´ÉÇÑ °Å¸®´Â ¾à " + (double)(oilAmount*20) + "km ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ " + (double)(oilAmount*20) + "km ï¿½Ô´Ï´ï¿½.");
 		
 	}
 	
-	//ÀÚµ¿Â÷ÀÇ Á¤º¸¸¦ Ãâ·ÂÇØÁÖ´Â ¸Þ¼­µå
+	//ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
 	void printCarInfo() {
-		System.out.println("[" + name + "~] ³²Àº ±â¸§ÀÇ ¾ç :" + oilAmount + "L, ÃÑ ÁÖÇà°Å¸® :" + distance + "km");
+		System.out.println("[" + name + "~] ï¿½ï¿½ï¿½ï¿½ ï¿½â¸§ï¿½ï¿½ ï¿½ï¿½ :" + oilAmount + "L, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ :" + distance + "km");
 	}
 	
 	
